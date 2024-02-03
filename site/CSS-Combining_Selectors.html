@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Combining Selectors</title>
+	<style>
+		.highlight-1{
+			background-color:green;
+		}
+		p1.highlight-1{
+			font-style: italic;
+		}
+		.highlight-1 .highlight-2{
+			color: red;
+			background-color: black;
+		}
+		section-2>article-1{
+			color: green;
+			font-size: 24px;
+		}
+		section-2>h4{
+			color: green;
+		}
+		section-5 li{
+			color: green;
+		}
+
+	</style>
+</head>
+<body>
+	<section-1>
+		<h1 class="highlight-1">Element With Class Selector</h1>
+		<p1>This is the example of Element with class selector. In this, I am using 'highlight-1' and 'highlight-2' as a class selector.</p1>
+		<div-1 class="highlight-2">This is the main point of the article.</div-1>
+	</section-1>
+	<section-2>
+		<h2>Child Selector</h2>
+		<section-3>
+			<h3>Subheading-1</h3>
+			<div-2>
+				<article-1>
+					ARTICLE which is inside of DIV, which is inside SECTION.
+				</article-1>
+			</div-2>
+		</section-3>
+		<section-3>
+			<article-1>
+				ARTICLE is a direct child of the SECTION element.
+			</article-1>
+		</section-3>
+		<h4>Subheading-2</h4>
+	</section-2>
+	<section-4>
+		<h5>Descendent Selector</h5>
+		<section-5>
+			Table of Contents:
+			<ul>
+				<li>Article-1</li>
+				<li>Article-2</li>
+				<li>Article-3</li>
+			</ul>
+		</section-5>
+		<article-2>
+			Shopping Lists:
+			<ul>
+				<li>Cookies</li>
+				<li>Cake</li>
+				<li>Pie</li>
+			</ul>
+		</article-2>
+	</section-4>
+</body>
+</html>
